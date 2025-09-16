@@ -1,11 +1,9 @@
-original_array = [2, 8, 9, 48, 8, 22, -12, 2]
-new_array = []
-i = 0
+arrays = [2, 8, 9, 48, 8, 22, -12, 2]
+arr_new = []
 
-while i < len(original_array):
-    if original_array[i] > 5:
-        new_array.append(original_array[i])
-    i += 1
-  
-print(original_array)
-print(new_array)
+for i in range(len(arrays)):
+    if arrays[i] > 5:
+        arr_new.append(arrays[i] + 2)
+
+print(arrays) 
+print(arr_new)
