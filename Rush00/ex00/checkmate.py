@@ -34,3 +34,15 @@ def checkmate(board_str: str):
   if king_count != 1:
       print("Error")
     return
+# helper: อยู่ในบอร์ดมั้น
+  def in_board(r, c):
+      return 0 <= r < n and 0 <= c < n
+
+#1) ตรวจ เบี้ย: ตามตัวอย่าง เบี้ย อยู่ใต้ king และโจมตีขึ้นบน:
+#check positions (kr+1, kc-1) and (kr+1, kc+1)
+  for dc in (-1,1)
+      r_p = kr + 1
+      c_p = kc + dc
+      if in_board(r_p, c_p) and rows[r_p][c_p] == 'P':
+          print("Success")
+          return
