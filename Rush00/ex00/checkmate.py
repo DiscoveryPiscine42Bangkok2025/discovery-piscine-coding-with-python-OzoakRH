@@ -30,3 +30,7 @@ def checkmate(board_str: str):
           if ch == 'K':
               king_count += 1
               kr, kc = i, j
+  # ถ้า King มีมากกว่า 1 ตัวหรือ น้อยกว่า จะ Error
+  if king_count != 1:
+      print("Error")
+    return
